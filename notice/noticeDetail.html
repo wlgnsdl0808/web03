@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>공지사항 상세보기</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/head.css">
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+      <div class="navbar-brand">
+        <a href="../index.html"><img src = "../data/logo.png"></a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      김포여행
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="../tour/tourCateList.html#page1">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        레포츠
+                  </a>
+                  <a class="navbar-item">
+                        체험
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      관광지
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="../tour/tourCateList.html#page2">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        숲.길
+                  </a>
+                  <a class="navbar-item">
+                        캠핑장
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      문화유산
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="../tour/tourCateList.html#page3">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        국가지정문화재
+                  </a>
+                  <a class="navbar-item">
+                        김포 역사
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      축제.행사
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="../tour/tourCateList.html#page4">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        상반기
+                  </a>
+                  <a class="navbar-item">
+                        하반기
+                  </a>  
+                </div>
+              </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      여행필수정보
+                </a>
+                <div class="navbar-dropdown">
+                     <a class="navbar-item" href="noticeList.html">
+                           공지사항
+                     </a>
+                     <a class="navbar-item">
+                      Q/A
+                     </a>
+                     <a class="navbar-item">
+                      이용후기
+                     </a>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item">
+         <div class="buttons">
+         <a href="../user/login.html" class="button is-primary">
+             <strong>로그인</strong>
+           </a>
+           <a href="../user/agree.html" class="button is-primary">
+             <strong>회원가입</strong>
+           </a>
+         </div>
+      </div>
+    </div>
+      </div>
+    </nav>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">공지사항 상세보기</h1>
+      <jsp:include page="/head.jsp" />
+		<table class="table">
+		   <tbody>
+		    <tr>
+		      <th>번호</th>
+		      <td>1</td>
+		    </tr>
+		    <tr>
+		      <th>제목</th>
+		      <td>공지사항1</td>
+		    </tr>
+		    <tr>
+		      <th>내용</th>
+		      <td><p>공지사항1</p></td>
+		    </tr>
+		    <tr> 
+		      <th>작성일</th>
+		      <td>
+				2022-12-01
+		      </td>
+		    </tr>
+		    <tr>
+		      <th>읽은 횟수</th>
+		      <td><p>0</p></td>
+		    </tr>
+		  </tbody>
+		</table>
+		<a href="noticeList.html" class="button is-primary">목록</a>
+    </div>
+  </section>
+  <footer class="footer">
+	<div class="content has-text-centered">
+	  <p>
+		<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+		<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+	  </p>
+	</div>
+  </footer>
+  </body>
+</html>

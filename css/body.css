@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.table { min-width:960px; }
+#visuall { display:block; background-image:url("/data/visual/visual_img1.jpg");
+background-size:100% auto; background-repeat:no-repeat; width: 100%; height: 940px; }
+#visual2 { display:block; background-image:url("/data/visual/visual_img2.jpg");
+background-size:100% auto; background-repeat:no-repeat; width: 100%; height: 940px; }
+#visual3 { display:block; background-image:url("/data/visual/visual_img3.jpg");
+background-size:100% auto; background-repeat:no-repeat; width: 100%; height: 940px; }
+#visual4 { display:block; background-image:url("/data/visual/visual_img4.jpg");
+background-size:100% auto; background-repeat:no-repeat; width: 100%; height: 940px; }
+#nav { border-bottom:3px solid #ddd; }

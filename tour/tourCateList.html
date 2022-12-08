@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>장소 상세보기</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <style>
+      .page { clear:both; width: 100%; min-height:100vh;}
+    .page:after { content:""; display:block; clear:both; }
+    .page_wrap { width: 1200px; margin: 0 auto; }
+    .content { display:none; }
+    .content:target { display:block; }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+      <div class="navbar-brand">
+        <a href="../index.html"><img src = "../data/logo.png"></a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      김포여행
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="tourCateList.html#page1">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        레포츠
+                  </a>
+                  <a class="navbar-item">
+                        체험
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      관광지
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="tourCateList.html#page2">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        숲.길
+                  </a>
+                  <a class="navbar-item">
+                        캠핑장
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      문화유산
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="tourCateList.html#page3">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        국가지정문화재
+                  </a>
+                  <a class="navbar-item">
+                        김포 역사
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      축제.행사
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="tourCateList.html#page4">
+                        전체
+                  </a>
+                  <a class="navbar-item">
+                        상반기
+                  </a>
+                  <a class="navbar-item">
+                        하반기
+                  </a>  
+                </div>
+              </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                      여행필수정보
+                </a>
+                <div class="navbar-dropdown">
+                     <a class="navbar-item" href="../notice/noticeList.html">
+                           공지사항
+                     </a>
+                     <a class="navbar-item">
+                      Q/A
+                     </a>
+                     <a class="navbar-item">
+                      이용후기
+                     </a>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item">
+         <div class="buttons">
+         <a href="../user/login.html" class="button is-primary">
+             <strong>로그인</strong>
+           </a>
+           <a href="../user/agree.html" class="button is-primary">
+             <strong>회원가입</strong>
+           </a>
+         </div>
+      </div>
+    </div>
+      </div>
+    </nav>
+<div class="content" id="page1">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">장소 상세보기</h1>
+      	<div id="con">
+      		<div class="tile is-ancestor columns" style="padding-bottom:40px;">
+			      <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">금빛수로 수상레저시설</p>
+			          <p class="subtitle">
+						레포츠
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main1.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">금빛수로 수상레저시설</p>
+			          </div>
+			          <a href="tourDetail.html#page1" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+            <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">수상레저체험장</p>
+			          <p class="subtitle">
+						레포츠
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main2.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">수상레저체험장(아라마리나)</p>
+			          </div>
+			          <a href="tourDetail.html#page2" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+      </div>
+  <div class="buttons">
+    <a href="#page1" class="button is-primary">전체 목록</a>
+  </div>
+</section>
+</div>
+<div class="content" id="page2">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">장소 상세보기</h1>
+      	<div id="con">
+      		<div class="tile is-ancestor columns" style="padding-bottom:40px;">
+			      <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">평화누리길 1코스</p>
+			          <p class="subtitle">
+						숲.길
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main3.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">평화누리길 1코스</p>
+			          </div>
+			          <a href="tourDetail.html#page3" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+            <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">평화누리길 2코스</p>
+			          <p class="subtitle">
+                  숲.길
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main4.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">평화누리길 2코스</p>
+			          </div>
+			          <a href="#page2" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+      </div>
+  <div class="buttons">
+    <a href="#page2" class="button is-primary">전체 목록</a>
+  </div>
+</section>
+</div>
+<div class="content" id="page3">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">장소 상세보기</h1>
+      	<div id="con">
+      		<div class="tile is-ancestor columns" style="padding-bottom:40px;">
+			      <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">묘법연화경<권제7></p>
+			          <p class="subtitle">
+						국가지정문화재
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main5.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">묘법연화경<권제7></p>
+			          </div>
+			          <a href="tourDetail.html#page4" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+            <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">김포 문수산성</p>
+			          <p class="subtitle">
+                  국가지정문화재
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main6.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">국가지정문화재</p>
+			          </div>
+			          <a href="#page3" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+      </div>
+  <div class="buttons">
+    <a href="#page3" class="button is-primary">전체 목록</a>
+  </div>
+</section>
+</div>
+<div class="content" id="page4">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">장소 상세보기</h1>
+      	<div id="con">
+      		<div class="tile is-ancestor columns" style="padding-bottom:40px;">
+			      <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">김포벚꽃축제</p>
+			          <p class="subtitle">
+						상반기
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main7.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">김포벚꽃축제</p>
+			          </div>
+			          <a href="tourDetail.html#page5" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+            <div class="tile is-3" style="box-sizing:border-box;">
+			        <article class="tile is-child is-one-third notification" style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+			          <p class="title">가현산 진달래축제</p>
+			          <p class="subtitle">
+                  상반기
+			          </p>
+			          <figure class="image is-4by3">
+			            <img src="../data/main8.jpg" alt="">
+			          </figure>
+			          <div class="content" style="margin:10px;">
+			          	<p class="item_com">가현산 진달래축제</p>
+			          </div>
+			          <a href="#page4" class="button is-primary">자세히 보기</a>
+			        </article>
+			      </div>
+      </div>
+  <div class="buttons">
+    <a href="#page4" class="button is-primary">전체 목록</a>
+  </div>
+</section>
+</div>
+  <footer class="footer">
+	<div class="content has-text-centered">
+	  <p>
+		<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+		<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+	  </p>
+	</div>
+  </footer>
+  </body>
+</html>

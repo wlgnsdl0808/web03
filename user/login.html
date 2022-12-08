@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>로그인</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="../css/head.css">
+
+<style>
+.title { padding-top:36px; padding-bottom:20px; }
+.frm1 { border:2px solid #333; padding: 24px; width: 1000px; margin:50px auto; }
+#nav { border-bottom:3px solid #ddd; }
+</style>
+</head>
+<body>
+	<nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+    <div class="navbar-brand">
+      <a href="../index.html"><img src = "../data/logo.png"></a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                    김포여행
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="../tour/tourCateList.html">
+                      전체
+                </a>
+                <a class="navbar-item">
+                      레포츠
+                </a>
+                <a class="navbar-item">
+                      체험
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                    관광지
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="../tour/tourCateList2.html">
+                      전체
+                </a>
+                <a class="navbar-item">
+                      숲.길
+                </a>
+                <a class="navbar-item">
+                      캠핑장
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                    문화유산
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="../tour/tourCateList3.html">
+                      전체
+                </a>
+                <a class="navbar-item">
+                      국가지정문화재
+                </a>
+                <a class="navbar-item">
+                      김포 역사
+                </a>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                    축제.행사
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="../tour/tourCateList4.html">
+                      전체
+                </a>
+                <a class="navbar-item">
+                      상반기
+                </a>
+                <a class="navbar-item">
+                      하반기
+                </a>  
+              </div>
+            </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                    여행필수정보
+              </a>
+              <div class="navbar-dropdown">
+                   <a class="navbar-item" href="../notice/noticeList.html">
+                         공지사항
+                   </a>
+                   <a class="navbar-item">
+                    Q/A
+                   </a>
+                   <a class="navbar-item">
+                    이용후기
+                   </a>
+              </div> 
+          </div>
+      </div>
+      
+      <div class="navbar-end">
+        <div class="navbar-item">
+       <div class="buttons">
+       <a href="login.html" class="button is-primary">
+           <strong>로그인</strong>
+         </a>
+         <a href="agree.html" class="button is-primary">
+           <strong>회원가입</strong>
+         </a>
+       </div>
+    </div>
+  </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container">
+	<h2 class="title">로그인</h2>
+	<form name="frm1" id="frm1" action="${path1 }/UserLoginCtrl.do" method="post" onsubmit="return joinCheck(this)" class="frm1">
+		<table class="table">
+			<tbody>
+				<tr>
+					<th>아이디</th>
+					<td>
+						<div class="form-row">
+							<input type="text" name="id" id="id" placeholder="아이디 입력" class="input" autofocus required />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>비밀번호</th>
+					<td><input type="password" name="pw" id="pw" placeholder="비밀번호 입력" class="input" required /></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn-group">
+			<input type="submit" name="submit-btn" class="button is-primary" value="로그인">
+			<input type="reset" name="reset-btn" class="button is-primary" value="취소">
+			<a href="agree.html" class="button is-primary">회원가입</a>
+		</div>
+	</form>	
+	<script>
+	</script>
+</div>
+</section>
+<footer class="footer">
+	<div class="content has-text-centered">
+	  <p>
+		<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+		<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+		is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+	  </p>
+	</div>
+  </footer>
+</body>
+</html>
